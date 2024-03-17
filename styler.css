@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .section {
+    border: 1px solid black;
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  /* Desktop View */
+  @media (min-width: 992px) {
+    .section {
+      width: 33.33%;
+      float: left;
+      padding: 10px;
+      position: relative;
+    }
+
+    .section-title {
+      font-size: 18px;
+    }
+  }
+
+  /* Tablet View */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .section {
+      width: 50%;
+      float: left;
+      padding: 10px;
+      position: relative;
+    }
+
+    .section:nth-child(3) {
+      clear: both;
+      width: 100%;
+    }
+
+    .section-title {
+      font-size: 16px;
+    }
+  }
+
+  /* Mobile View */
+  @media (max-width: 767px) {
+    .section {
+      width: 100%;
+      padding: 10px;
+      position: relative;
+    }
+
+    .section-title {
+      font-size: 14px;
+    }
+  }
+
+  /* Colors */
+  .section:nth-child(1) {
+    background-color: #FFC107; /* Yellow */
+  }
+
+  .section:nth-child(2) {
+    background-color: #2196F3; /* Blue */
+  }
+
+  .section:nth-child(3) {
+    background-color: #4CAF50; /* Green */
+  }
+
+  /* Colors for section title regions */
+  .section:nth-child(1) .section-title {
+    background-color: #FF5722; /* Orange */
+  }
+
+  .section:nth-child(2) .section-title {
+    background-color: #673AB7; /* Purple */
+  }
+
+  .section:nth-child(3) .section-title {
+    background-color: #E91E63; /* Pink */
+  }
